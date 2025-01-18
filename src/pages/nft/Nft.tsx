@@ -25,13 +25,14 @@ function Nft() {
         )}
         {!loading && !error && nftdetail && (
           <>
-            <div className="md:h-[420px] lg:h-560px w-full ">
+            <div className="h-[500px] w-full">
               <img
                 src={nftdetail?.display_image_url || IMAGES.HEROIMAGE2}
                 alt=""
-                className=" h-full w-full object-cover"
+                className="h-full w-full object-cover object-top"
               />
             </div>
+
             <div className="h-auto md:h-auto lg:h-auto flex justify-center items-center my-[30px]">
               <div className="w-[315px] h-auto md:w-[690px] md:h-auto lg:w-[1000px] lg:h-auto flex flex-col md:flex-row lg:flex-row justify-between">
                 <div className="md:w-[365px] lg:w-[605px] flex flex-col justify-center ">
