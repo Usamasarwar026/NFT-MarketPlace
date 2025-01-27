@@ -1,27 +1,27 @@
 import { useState, useEffect } from "react";
-import DiscoverCard from "../discoverCard/DiscoverCard"; 
+import DiscoverCard from "../discoverCard/DiscoverCard";
 import Loader from "../loader/Loader";
 import { nftByCollection } from "./nftByCollection";
 
 export default function NftCategory() {
   const { data, loading, error } = nftByCollection();
-  
-  const [visibleItems, setVisibleItems] = useState(12);
-  
+
+  const [visibleItems, setVisibleItems] = useState<number>(12);
+
   const handleResize = () => {
-    if (window.innerWidth >= 1024) { 
+    if (window.innerWidth >= 1024) {
       setVisibleItems(12);
-    } else if (window.innerWidth >= 768) { 
+    } else if (window.innerWidth >= 768) {
       setVisibleItems(8);
-    } else { 
+    } else {
       setVisibleItems(5);
     }
   };
 
   useEffect(() => {
-    handleResize(); 
-    window.addEventListener("resize", handleResize); 
-    
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -37,7 +37,7 @@ export default function NftCategory() {
           </span>
         </div>
       </div>
-      
+
       <div className="h-[auto] md:h-[auto] lg:h-auto flex justify-center items-center my-[50px]">
         <div className="w-[315px] h-auto md:h-auto flex flex-col md:flex-row md:flex-wrap lg:flex-row md:w-[680px] gap-5 lg:w-[1060px] justify-center">
           {loading && <Loader />}
@@ -46,7 +46,7 @@ export default function NftCategory() {
               <p className="text-red-500 text-lg">{error}</p>
             </div>
           )}
-          
+
           {!loading &&
             !error &&
             data.slice(0, visibleItems).map((item: any, index: number) => (
@@ -56,19 +56,35 @@ export default function NftCategory() {
             ))}
         </div>
       </div>
-      
-      {/* Show More / Show Less Button */}
+
       <div className="flex justify-center my-4">
         {visibleItems < data.length ? (
           <button
-            onClick={() => setVisibleItems(visibleItems + (window.innerWidth >= 1024 ? 12 : window.innerWidth >= 768 ? 8 : 5))}
+            onClick={() =>
+              setVisibleItems(
+                visibleItems +
+                  (window.innerWidth >= 1024
+                    ? 12
+                    : window.innerWidth >= 768
+                    ? 8
+                    : 5)
+              )
+            }
             className="px-4 py-2 bg-[#3B3B3B] text-white rounded-md hover:bg-[#858584] transition"
           >
             Show More
           </button>
         ) : (
           <button
-            onClick={() => setVisibleItems(window.innerWidth >= 1024 ? 12 : window.innerWidth >= 768 ? 8 : 5)}
+            onClick={() =>
+              setVisibleItems(
+                window.innerWidth >= 1024
+                  ? 12
+                  : window.innerWidth >= 768
+                  ? 8
+                  : 5
+              )
+            }
             className="px-4 py-2 bg-[#3B3B3B] text-white rounded-md hover:bg-[#858584] transition"
           >
             Show Less

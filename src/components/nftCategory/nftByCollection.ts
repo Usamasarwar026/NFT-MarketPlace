@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
+import { useAppDispatch, useAppSelector } from "../../reduxHooks/ReduxHooks";
 import { fetchSingleCollection } from "../../store/slices/collectionSlugSlice";
 export function nftByCollection() {
-    const { collection_slug } = useParams<{ collection_slug: string }>(); // Get slug from route params
+  const { collection_slug } = useParams<{ collection_slug: string }>(); // Get slug from route params
   const dispatch = useAppDispatch();
 
   const { singleCollection, loading, error } = useAppSelector(
@@ -11,13 +11,15 @@ export function nftByCollection() {
   );
   const data = Array.isArray(singleCollection) ? singleCollection : [];
 
-  // Fetch data on component mount or slug change
   useEffect(() => {
     if (collection_slug) {
-      dispatch(fetchSingleCollection({ collection_slug :collection_slug || "azukielementals" }));
+      dispatch(
+        fetchSingleCollection({
+          collection_slug: collection_slug || "azukielementals",
+        })
+      );
     }
   }, [collection_slug, dispatch]);
 
-  return {data, loading, error}
+  return { data, loading, error };
 }
-

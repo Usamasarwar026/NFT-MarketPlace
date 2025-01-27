@@ -6,15 +6,12 @@ import Button from "../button/Button";
 import { AiOutlineUser } from "react-icons/ai";
 import { IMAGES } from "../../constant/images";
 
-
 export default function Footer() {
   return (
     <>
       <div className="bg-[#3B3B3B] w-full h-[776px] md:h-[703px] lg:h-[353px] flex  justify-center items-center">
-
         <div className="">
           <div className=" flex flex-col w-[315px] h-[633px] md:w-[690px] md:h-[541px] gap-8 lg:flex-row item-center justify-center lg:w-[1000px] lg:h-[200px] ">
-            {/* -----firstsection---------- */}
             <div className=" w-[315px] h-[185px] md:w-full md:h-[163px] lg:w-[400px]">
               <div>
                 <Link to={"/"}>
@@ -40,7 +37,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            {/* -----------------secondsection---------- */}
+
             <div className="w-[315px] h-[161px] lg:w-[310px] md:h-[161px] md:w-full ">
               <div className="text-[#ffffff] pb-3 font-bold text-[22px]">
                 Explore
@@ -55,7 +52,7 @@ export default function Footer() {
                 Connect a Wallet
               </div>
             </div>
-            {/* ----------thirdportion------------- */}
+
             <div className="h-[227px]  md:h-[157px] md:w-full  lg:w-[420px]">
               <div className="text-[#ffffff] font-bold text-[22px]">
                 Join Our Weekly Digest
@@ -64,10 +61,17 @@ export default function Footer() {
                 Get exclusive promotions & updates straight to your inbox.
               </div>
               <div className="flex flex-col md:flex-row lg:flex-row w-full rounded py-2 gap-3 md:gap-0 lg:gap-0 ">
-                <input type="email" placeholder="Enter your Email" className="px-6 outline-none rounded-[10px]  h-[46px] md:h-auto lg:h-auto lg:w-[230px] placeholder-black" />
+                <input
+                  type="email"
+                  placeholder="Enter your Email"
+                  className="px-6 outline-none rounded-[10px]  h-[46px] md:h-auto lg:h-auto lg:w-[230px] placeholder-black"
+                />
                 <div className="md:relative lg:relative right-10 ">
-
-                  <Button title="Subscribe" icon={<AiOutlineUser size={20} />} className='text-white bg-primary  rounded-[10px] w-[315px] h-[46px] md:w-[179px] lg:w-[211px] flex justify-center' />
+                  <Button
+                    title="Subscribe"
+                    icon={<AiOutlineUser size={20} />}
+                    className="text-white bg-primary  rounded-[10px] w-[315px] h-[46px] md:w-[179px] lg:w-[211px] flex justify-center"
+                  />
                 </div>
               </div>
             </div>
@@ -78,8 +82,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
       </div>
     </>
-  )
+  );
 }

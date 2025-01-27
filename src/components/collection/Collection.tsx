@@ -1,48 +1,49 @@
 import CollectionCard from "../collectionCard/CollectionCard";
-// import { collectiondata } from "../../constant/constant";
 import { useEffect, useState } from "react";
 import { fetchCollection } from "../../store/slices/collectionSlice";
-import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
+import { useAppDispatch, useAppSelector } from "../../reduxHooks/ReduxHooks";
 import { collectionData } from "./collectionData";
 import Loader from "../loader/Loader";
 
 function Collection() {
-  const [cardsToShow, setCardsToShow] = useState(1);
+  const [cardsToShow, setCardsToShow] = useState<number>(1);
   const dispatch = useAppDispatch();
   const { collections, loading, error } = useAppSelector(
-    (stat) => stat.collection
+    (state) => state.collection
   );
 
   useEffect(() => {
     const updateCardsToShow = () => {
       if (window.innerWidth >= 1024) {
-        setCardsToShow(3); 
+        setCardsToShow(3);
       } else if (window.innerWidth >= 768) {
-        setCardsToShow(2); 
+        setCardsToShow(2);
       } else {
         setCardsToShow(1);
       }
     };
 
-    updateCardsToShow(); 
+    updateCardsToShow();
     window.addEventListener("resize", updateCardsToShow);
 
     return () => window.removeEventListener("resize", updateCardsToShow);
   }, []);
 
   useEffect(() => {
-    
-      dispatch(fetchCollection());
-    
+    dispatch(fetchCollection());
   }, [dispatch]);
 
   const mergedData = collections.map((item, index) => ({
-    ...item, // API data
+    ...item,
     ...(collectionData[index % collectionData.length] || {}),
   }));
 
-
-  if (loading) return <div><Loader/></div>;
+  if (loading)
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
   if (error) return <div>Error: {error}</div>;
 
   return (
@@ -58,8 +59,8 @@ function Collection() {
 
           <div className="flex gap-[2px]">
             {mergedData
-              .filter((item) => item.image_url && item.name) 
-              .slice(0, cardsToShow) 
+              .filter((item) => item.image_url && item.name)
+              .slice(0, cardsToShow)
               .map((item, index) => (
                 <div
                   key={item.collection || index}
@@ -76,4 +77,3 @@ function Collection() {
 }
 
 export default Collection;
-

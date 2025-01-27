@@ -16,7 +16,6 @@ function Rank() {
 
       <div className="h-[60px] flex justify-center">
         <div className="w-[315px] md:w-[680px] lg:w-[1000px] flex justify-evenly items-center">
-          {/* Today */}
           <Link
             to="/today"
             className="text-white font-semibold text-[16px] lg:text-[22px]"
@@ -25,7 +24,6 @@ function Rank() {
             <span className="hidden md:block">Today</span>
           </Link>
 
-          {/* This Week */}
           <Link
             to="#"
             className="text-[#858584] font-semibold text-[16px] lg:text-[22px]"
@@ -34,7 +32,6 @@ function Rank() {
             <span className="hidden md:block">This Week</span>
           </Link>
 
-          {/* This Month */}
           <Link
             to="#"
             className="text-[#858584] font-semibold text-[16px] lg:text-[22px]"
@@ -43,7 +40,6 @@ function Rank() {
             <span className="hidden md:block">This Month</span>
           </Link>
 
-          {/* All Time */}
           <Link
             to="#"
             className="text-[#858584] font-semibold text-[16px] lg:text-[22px]"
@@ -52,26 +48,8 @@ function Rank() {
           </Link>
         </div>
       </div>
-      {/* ----------ranking------------------- */}
-      {/* <div className="h-[2260px]">
-        <div className="w-[1000px]">
-          <div className="lg:h-[46px]">
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div> */}
-
-
-
     </>
-  )
+  );
 }
 
-export default Rank
+export default Rank;

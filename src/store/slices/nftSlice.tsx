@@ -8,16 +8,16 @@ const initialState: NFTState = {
   error: false,
 };
 
-// Async thunk
 export const fetchNFT = createAsyncThunk<NFTDetail, FetchNFTArgs>(
   "nft/fetchNFT",
-  async ({contract, identifier }) => {
-    const response = await axiosInstance.get(`/chain/matic/contract/${contract}/nfts/${identifier}`);
+  async ({ contract, identifier }) => {
+    const response = await axiosInstance.get(
+      `/chain/matic/contract/${contract}/nfts/${identifier}`
+    );
     return response.data.nft;
   }
 );
 
-// Slice
 export const nftSlice = createSlice({
   name: "nft",
   initialState,
@@ -25,7 +25,7 @@ export const nftSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(fetchNFT.pending, (state) => {
       state.loading = true;
-      state.error = false; // Reset error state on new fetch
+      state.error = false;
     });
     builder.addCase(fetchNFT.fulfilled, (state, action) => {
       state.loading = false;

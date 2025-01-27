@@ -1,4 +1,3 @@
-// nft slice types
 export type NFTState = {
   nftdetail: NFTDetail | null;
   loading: boolean;
@@ -10,7 +9,7 @@ export type FetchNFTArgs = {
   identifier: string;
 };
 export type CollectionState = {
-  collections: CollectionType[];
+  collections: CollectionType[] | [];
   loading: boolean;
   error: string | null;
 };
@@ -80,7 +79,7 @@ export type NftType = {
 };
 
 export type collectionSlugSlice = {
-  singleCollection: NftType[] | [];
+  singleCollection: NftType[] | null;
   loading: boolean;
   error: boolean | null;
 };
@@ -99,25 +98,23 @@ export type ButtonProps = {
   href?: string;
 };
 
-
-
 export type CollectionItem = {
-    collection: string;
-    image_url: string;
-    collectionimage: string;
-    collectionimg1: string;
-    collectionimg2: string;
-    number: number;
-    name: string;
-    user: string;
-  }
-  
-  export type CollectionCard = {
-    item: CollectionItem;
-  }
-  
-export type DiscoverCardItem ={
-    item: {
+  collection: string;
+  image_url: string;
+  collectionimage: string;
+  collectionimg1: string;
+  collectionimg2: string;
+  number: number;
+  name: string;
+  user: string;
+};
+
+export type CollectionCard = {
+  item: CollectionItem;
+};
+
+export type DiscoverCardItem = {
+  item: {
     image_url?: string;
     collection: string;
     contract: string;
@@ -126,6 +123,29 @@ export type DiscoverCardItem ={
     name?: string;
     price?: string;
     highestBid?: string;
-    }
-  }
-  
+  };
+};
+
+export type WorkCardProps = {
+  item: {
+    icon: string;
+    title: string;
+    description: string;
+  };
+};
+
+export type TimeState = {
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
+
+export type TimerProps = {
+  className?: string;
+};
+
+export type NFTParams = {
+  marketplace: string;
+  contract: string;
+  identifier: string;
+};

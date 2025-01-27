@@ -38,7 +38,6 @@ function Nft() {
                 <div className="md:w-[365px] lg:w-[605px] flex flex-col justify-center ">
                   <div className="h-[71px] md:h-[78px]  lg:h-[101px]">
                     <div className="font-[600px] text-[28px] md:text-[38px] lg:text-[51px] text-white">
-                      {/* {nftdetail?.name || "The Orbitians"} */}
                       {nftdetail.name
                         ? nftdetail.name.slice(0, 15) +
                           (nftdetail.name.length > 15 ? "..." : "")
@@ -49,9 +48,7 @@ function Nft() {
                     </div>
                   </div>
 
-                  {/* show only small screen---------- */}
                   <AuctionTime className=" w-[315px] h-[234px]  p-8 bg-[#3B3B3B] rounded-[20px] text-white md:hidden lg:hidden flex flex-col justify-center mt-5 gap-3" />
-                  {/* -------------------------- */}
 
                   <div className="lg:h-[76px] mt-6 ">
                     <div className="md:font-[400px] md:text-[16px] lg:font-[700px] lg:text-[22px] text-[#858584]">

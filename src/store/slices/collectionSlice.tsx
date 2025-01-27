@@ -1,29 +1,28 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axiosInstance from '../../utils/axiosInstance';
-import { CollectionState, CollectionType } from '../../types/types';
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axiosInstance from "../../utils/axiosInstance";
+import { CollectionState, CollectionType } from "../../types/types";
 
-
-// Initial state
 const initialState: CollectionState = {
   collections: [],
   loading: false,
   error: null,
 };
 
-// Async thunk to fetch collections
 export const fetchCollection = createAsyncThunk<CollectionType[]>(
-  'collection/fetchCollection',
+  "collection/fetchCollection",
   async () => {
-    const response = await axiosInstance.get('/collections?chain=matic&order_by=seven_day_volume', {
-      params: {limit: '30'}
-    });
+    const response = await axiosInstance.get(
+      "/collections?chain=matic&order_by=seven_day_volume",
+      {
+        params: { limit: "30" },
+      }
+    );
     return response.data.collections;
   }
-  
 );
-// Create the slice
+
 const collectionSlice = createSlice({
-  name: 'collection',
+  name: "collection",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -38,7 +37,7 @@ const collectionSlice = createSlice({
       })
       .addCase(fetchCollection.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.error.message || 'Failed to fetch collections';
+        state.error = action.error.message || "Failed to fetch collections";
       });
   },
 });

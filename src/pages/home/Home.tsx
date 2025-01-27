@@ -10,39 +10,31 @@ import JoinWork from "../../components/joinWork/JoinWork";
 import { useEffect, useState } from "react";
 import Loader from "../../components/loader/Loader";
 
-
 export default function Home() {
+  const [loading, SetLoading] = useState<boolean>(true);
 
-  const [loading, SetLoading] = useState(true);
-
-  useEffect(
-    () => {
-      setTimeout(() => {
-        SetLoading(false);
-      }, 2000);
-    }, []
-  )
+  useEffect(() => {
+    setTimeout(() => {
+      SetLoading(false);
+    }, 2000);
+  }, []);
   return (
-    <div >
+    <div>
       {loading ? (
-        <Loader/>
-      ):
-      (
+        <Loader />
+      ) : (
         <>
-        <Navbar/>
-       <HeroSection/>
-       <Collection/>
-      <Browser/>
-      <Discover/>
-      <MagicMushroom/>
-      <Work/>
-      <JoinWork/>
-      <Footer/>
+          <Navbar />
+          <HeroSection />
+          <Collection />
+          <Browser />
+          <Discover />
+          <MagicMushroom />
+          <Work />
+          <JoinWork />
+          <Footer />
         </>
-      )
-      }
-      
-
+      )}
     </div>
-  )
+  );
 }

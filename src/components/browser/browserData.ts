@@ -1,35 +1,35 @@
-
-import {IMAGES} from '../../constant/images'
-export const BrowserData = [{
-    title: 'Art',
+import { IMAGES } from "../../constant/images";
+export const BrowserData = [
+  {
+    title: "Art",
     image: IMAGES.ART,
-},
-{
-    title: 'Music',
+  },
+  {
+    title: "Music",
     image: IMAGES.MUSIC,
-},
-{
-    title: 'Collectible',
+  },
+  {
+    title: "Collectible",
     image: IMAGES.COLLECTIBLE,
-},
-{
-    title: 'Photography',
+  },
+  {
+    title: "Photography",
     image: IMAGES.PHOTOGRAPHY,
-},
-{
-    title: 'Utility',
+  },
+  {
+    title: "Utility",
     image: IMAGES.UTILITY,
-},
-{
-    title: 'Sport',
+  },
+  {
+    title: "Sport",
     image: IMAGES.SPORT,
-},
-{
-    title: 'Video',
+  },
+  {
+    title: "Video",
     image: IMAGES.VIDEO,
-},
-{
-    title: 'Virtual Word',
+  },
+  {
+    title: "Virtual Word",
     image: IMAGES.VIRTUALWORD,
-}
-]
+  },
+];
