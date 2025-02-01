@@ -126,7 +126,7 @@ export type DiscoverCardItem = {
     // disableNavigation: boolean;
     
   };
-  disableNavigation: boolean;
+  disableNavigation?: boolean;
 };
 
 export type WorkCardProps = {
