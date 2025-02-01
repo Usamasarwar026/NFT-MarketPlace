@@ -6,10 +6,16 @@ import ConnectWalletPage from "../pages/connectwallet/ConnectWalletPage";
 import Nft from "../pages/nft/Nft";
 import AccountSection from "../components/accountSection/AccountSection";
 import Layout from "../components/layout/Layout";
+import ScrollToTop from "../components/ScrollTop/ScrollToTop";
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout/>,
+    element: (
+      <>
+        <ScrollToTop /> 
+        <Layout />
+      </>
+    ),
     children: [
       {
         path: "/",
