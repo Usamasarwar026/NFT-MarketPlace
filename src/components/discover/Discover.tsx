@@ -24,7 +24,7 @@ function Discover() {
         {DISCOVER_DATA?.map((item, index) => {
           return (
             <div key={index} className={item.className}>
-              <DiscoverCard item={item} />
+              <DiscoverCard item={item} disableNavigation={true} />
             </div>
           );
         })}

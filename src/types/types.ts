@@ -123,7 +123,9 @@ export type DiscoverCardItem = {
     name?: string;
     price?: string;
     highestBid?: string;
+    
   };
+  disableNavigation: boolean;
 };
 
 export type WorkCardProps = {
