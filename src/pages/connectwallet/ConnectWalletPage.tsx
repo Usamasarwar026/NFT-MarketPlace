@@ -3,12 +3,10 @@ import ConnectWallet from "../../components/connectWallet/ConnectWallet";
 
 function ConnectWalletPage() {
   return (
-    <>
-      <div>
-        <Navbar />
-        <ConnectWallet />
-      </div>
-    </>
+    <div>
+      <Navbar />
+      <ConnectWallet />
+    </div>
   );
 }
 

@@ -2,11 +2,9 @@ import Router from "./routing/Router";
 
 function App() {
   return (
-    <>
-      <div className="bg-backgroundColor">
-        <Router />
-      </div>
-    </>
+    <div className="bg-backgroundColor">
+      <Router />
+    </div>
   );
 }
 

@@ -4,7 +4,7 @@ import { CiLock } from "react-icons/ci";
 import { IMAGES } from "../../constant/images";
 function AccountSection() {
   return (
-    <>
+    
       <div className="h-[747px] md:h-[615px] lg:h-[658px] md:flex md:justify-between lg:justify-between md:gap-4 lg:gap-5">
         <div className="h-[232px] md:w-[397px] md:h-full lg:w-[610px] lg:h-full">
           <img
@@ -35,7 +35,7 @@ function AccountSection() {
                 <input
                   type="text"
                   placeholder="Username"
-                  className="h-full w-full rounded-full pl-12 placeholder-[#2B2B2B] outline-none"
+                  className="h-full w-full rounded-full pl-12 placeholder-[backgroundColor] outline-none"
                 />
               </div>
               <div className="relative h-[46px] w-[315px]">
@@ -47,7 +47,7 @@ function AccountSection() {
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="h-full w-full rounded-full pl-12 placeholder-[#2B2B2B] outline-none"
+                  className="h-full w-full rounded-full pl-12 placeholder-[backgroundColor] outline-none"
                 />
               </div>
               <div className="relative h-[46px] w-[315px]">
@@ -59,7 +59,7 @@ function AccountSection() {
                 <input
                   type="password"
                   placeholder="Password"
-                  className="h-full w-full rounded-full pl-12 placeholder-[#2B2B2B] outline-none"
+                  className="h-full w-full rounded-full pl-12 placeholder-[backgroundColor] outline-none"
                 />
               </div>
               <div className="relative h-[46px] w-[315px]">
@@ -71,7 +71,7 @@ function AccountSection() {
                 <input
                   type="password"
                   placeholder="Confirm Password"
-                  className="h-full w-full rounded-full pl-12 placeholder-[#2B2B2B] outline-none"
+                  className="h-full w-full rounded-full pl-12 placeholder-[backgroundColor] outline-none"
                 />
               </div>
             </div>
@@ -85,7 +85,7 @@ function AccountSection() {
           </div>
         </div>
       </div>
-    </>
+    
   );
 }
 

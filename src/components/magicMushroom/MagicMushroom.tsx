@@ -14,7 +14,7 @@ function MagicMushroom() {
         />
         <div className="flex flex-col px-5  md:flex-row lg:flex-row justify-between items-end mb-[60px] text-white w-[315px] h-[430px] md:w-[670px] md:h-[210px] lg:w-[1050px] lg:h-[220px]">
           <div className="py-10 md:p-0 lg:p-0 flex flex-col justify-between h-[180px]">
-            <div className="flex justify-start  p-2 bg-[#3B3B3B] rounded-[20px] w-[151px] items-center gap-3">
+            <div className="flex justify-start  p-2 bg-secondary rounded-[20px] w-[151px] items-center gap-3">
               <div>
                 <img
                   src={IMAGES.MUSHROOM}

@@ -14,20 +14,18 @@ function MarketPlace() {
     }, 2000);
   });
   return (
-    <>
-      <div>
-        {loading ? (
-          <Loader />
-        ) : (
-          <>
-            <Navbar />
-            <SecondHero />
-            <NftCategory />
-            <Footer />
-          </>
-        )}
-      </div>
-    </>
+    <div>
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <Navbar />
+          <SecondHero />
+          <NftCategory />
+          <Footer />
+        </>
+      )}
+    </div>
   );
 }
 

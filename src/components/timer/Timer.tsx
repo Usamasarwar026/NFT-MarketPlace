@@ -32,35 +32,33 @@ function Timer(props: TimerProps) {
     return () => clearInterval(timer);
   }, [time, initialTime]);
   return (
-    <>
-      <div>
-        <div className={`${className}`}>
-          <div className="mb-1 mx-[30px] text-lg">Auction ends in:</div>
-          <div className="flex space-x-2 justify-center ">
-            <div>
-              <div className="text-2xl font-bold">
-                {String(time.hours).padStart(2, "0")}
-              </div>
-              <div className="text-sm">Hours</div>
+    <div>
+      <div className={`${className}`}>
+        <div className="mb-1 mx-[30px] text-lg">Auction ends in:</div>
+        <div className="flex space-x-2 justify-center ">
+          <div>
+            <div className="text-2xl font-bold">
+              {String(time.hours).padStart(2, "0")}
             </div>
-            <div className="font-bold pt-1">:</div>
-            <div>
-              <div className="text-2xl font-bold">
-                {String(time.minutes).padStart(2, "0")}
-              </div>
-              <div className="text-sm">Minutes</div>
+            <div className="text-sm">Hours</div>
+          </div>
+          <div className="font-bold pt-1">:</div>
+          <div>
+            <div className="text-2xl font-bold">
+              {String(time.minutes).padStart(2, "0")}
             </div>
-            <div className="font-bold pt-1">:</div>
-            <div>
-              <div className="text-2xl font-bold">
-                {String(time.seconds).padStart(2, "0")}
-              </div>
-              <div className="text-sm">Seconds</div>
+            <div className="text-sm">Minutes</div>
+          </div>
+          <div className="font-bold pt-1">:</div>
+          <div>
+            <div className="text-2xl font-bold">
+              {String(time.seconds).padStart(2, "0")}
             </div>
+            <div className="text-sm">Seconds</div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

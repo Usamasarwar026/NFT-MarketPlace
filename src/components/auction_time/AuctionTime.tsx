@@ -33,7 +33,7 @@ function AuctionTime({ className }: ButtonProps) {
   }, [time, initialTime]);
 
   return (
-    <>
+    
       <div>
         <div className={`${className}`}>
           <div className=" mx-[30px] text-lg">Auction ends in:</div>
@@ -68,7 +68,7 @@ function AuctionTime({ className }: ButtonProps) {
           </div>
         </div>
       </div>
-    </>
+    
   );
 }
 

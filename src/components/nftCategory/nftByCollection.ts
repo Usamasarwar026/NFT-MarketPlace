@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../hooks/useRedux";
 import { fetchSingleCollection } from "../../store/slices/collectionSlugSlice";
 export function nftByCollection() {
-  const { collection_slug } = useParams<{ collection_slug: string }>(); // Get slug from route params
+  const { collection_slug } = useParams<{ collection_slug: string }>(); 
   const dispatch = useAppDispatch();
 
   const { singleCollection, loading, error } = useAppSelector(
