@@ -1,14 +1,14 @@
 import { AiOutlineMail, AiOutlineUser } from "react-icons/ai";
-import accountpic from "../../assets/image/Image Placeholder (1).png";
 import Button from "../button/Button";
 import { CiLock } from "react-icons/ci";
+import { IMAGES } from "../../constant/images";
 function AccountSection() {
   return (
     <>
       <div className="h-[747px] md:h-[615px] lg:h-[658px] md:flex md:justify-between lg:justify-between md:gap-4 lg:gap-5">
         <div className="h-[232px] md:w-[397px] md:h-full lg:w-[610px] lg:h-full">
           <img
-            src={accountpic}
+            src={IMAGES.ACCOUNTPIC}
             alt=""
             className="h-[232px] w-full md:h-full md:w-[397px] lg:w-[610px] lg:h-full object-cover"
           />

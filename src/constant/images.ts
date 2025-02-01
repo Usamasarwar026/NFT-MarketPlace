@@ -6,22 +6,22 @@ import photography from "../assets/image/Photography.png";
 import utitilty from "../assets/image/Utility.png";
 import sport from "../assets/image/Sport.png";
 import video from "../assets/image/Video.png";
-import virtualword from "../assets/image/Virtual Word.png";
-import nft1 from "../assets/image/nft1.png";
-import nft2 from "../assets/image/nft2.png";
-import nft3 from "../assets/image/nft3.png";
+import virtualword from "../assets/image/VirtualWord.png";
+import nft1 from "../assets/image/DistantGalaxy.png";
+import nft2 from "../assets/image/LifeEdena.png";
+import nft3 from "../assets/image/AstroFiction.png";
 import nftavator1 from "../assets/image/NftAvatar1.png";
 import nftavator2 from "../assets/image/NftAvatar2.png";
 import nftavator3 from "../assets/image/NftAvatar3.png";
-import collection1 from "../assets/image/Collection1.png";
-import collection2 from "../assets/image/Collection2.png";
-import collection3 from "../assets/image/Collection3.png";
-import collectionimg1 from "../assets/image/Collectionimg1.png";
-import collectionimg2 from "../assets/image/Collectionimg2.png";
-import collectionimg3 from "../assets/image/Collectionimg3.png";
-import collectionimg4 from "../assets/image/Collectionimg4.png";
-import collectionimg5 from "../assets/image/Collectionimg5.png";
-import collectionimg6 from "../assets/image/Collectionimg6.png";
+import collection1 from "../assets/image/Dog.png";
+import collection2 from "../assets/image/Mushroom1.png";
+import collection3 from "../assets/image/Man1.png";
+import collectionimg1 from "../assets/image/Cat.png";
+import collectionimg2 from "../assets/image/Bear.png";
+import collectionimg3 from "../assets/image/Mushroom2.png";
+import collectionimg4 from "../assets/image/Mushroom3.png";
+import collectionimg5 from "../assets/image/Man2.png";
+import collectionimg6 from "../assets/image/Man3.png";
 import fox from "../assets/image/FoxAvator.png";
 import shroomie from "../assets/image/ShroomieAvator.png";
 import bekind from "../assets/image/BeKindAvator.png";
@@ -33,8 +33,9 @@ import workicon2 from "../assets/icon/WorkIcon2.png";
 import workicon3 from "../assets/icon/WorkIcon3.png";
 import joinworkimage from "../assets/image/JoinWorkPic.png";
 import logo from "../assets/icon/Logo.png";
-import menuicon from "../assets/icon/nav menu.png";
+import menuicon from "../assets/icon/navmenu.png";
 import mushroom from "../assets/image/mushroom.png";
+import AccountPic from "../assets/image/AccountImage.png";
 
 export const IMAGES = {
   SVGICON: svgicon,
@@ -74,4 +75,5 @@ export const IMAGES = {
   LOGO: logo,
   MENUICON: menuicon,
   MUSHROOM: mushroom,
+  ACCOUNTPIC: AccountPic,
 };
