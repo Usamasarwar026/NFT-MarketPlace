@@ -1,15 +1,16 @@
-import accountpic from "../../assets/image/Image Placeholder (1).png";
+
 import Button from "../button/Button";
 import mask from "../../assets/icon/Metamask.png";
 import wallet from "../../assets/icon/WalletConnect.png";
 import coin from "../../assets/icon/Coinbase.png";
+import { IMAGES } from "../../constant/images";
 function ConnectWallet() {
   return (
     <>
       <div className="h-[662px] md:h-[530px] lg:h-[602px] md:flex md:justify-between lg:justify-between md:gap-4 lg:gap-5">
         <div className="h-[232px] md:w-[397px] md:h-full lg:w-[610px] lg:h-full">
           <img
-            src={accountpic}
+            src={IMAGES.ACCOUNTPIC}
             alt=""
             className="h-[232px] w-full md:h-full md:w-[397px] lg:w-[610px] lg:h-full object-cover"
           />

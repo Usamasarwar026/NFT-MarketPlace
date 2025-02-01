@@ -1,9 +1,9 @@
 import CollectionCard from "../collectionCard/CollectionCard";
 import { useEffect, useState } from "react";
 import { fetchCollection } from "../../store/slices/collectionSlice";
-import { useAppDispatch, useAppSelector } from "../../reduxHooks/ReduxHooks";
-import { collectionData } from "./collectionData";
+import { useAppDispatch, useAppSelector } from "../../hooks/useRedux";
 import Loader from "../loader/Loader";
+import { COLLECTION_DATA } from "../../constant/constantData";
 
 function Collection() {
   const [cardsToShow, setCardsToShow] = useState<number>(1);
@@ -33,9 +33,9 @@ function Collection() {
     dispatch(fetchCollection());
   }, [dispatch]);
 
-  const mergedData = collections.map((item, index) => ({
+  const mergedData = collections?.map((item, index) => ({
     ...item,
-    ...(collectionData[index % collectionData.length] || {}),
+    ...(COLLECTION_DATA[index % COLLECTION_DATA.length] || {}),
   }));
 
   if (loading)
@@ -59,9 +59,9 @@ function Collection() {
 
           <div className="flex gap-[2px]">
             {mergedData
-              .filter((item) => item.image_url && item.name)
-              .slice(0, cardsToShow)
-              .map((item, index) => (
+              ?.filter((item) => item.image_url && item.name)
+              ?.slice(0, cardsToShow)
+              ?.map((item, index) => (
                 <div
                   key={item.collection || index}
                   className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3"

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../reduxHooks/ReduxHooks";
+import { useAppDispatch, useAppSelector } from "../../hooks/useRedux";
 import { fetchSingleCollection } from "../../store/slices/collectionSlugSlice";
 export function nftByCollection() {
   const { collection_slug } = useParams<{ collection_slug: string }>(); // Get slug from route params

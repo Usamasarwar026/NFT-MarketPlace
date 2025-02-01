@@ -1,5 +1,5 @@
+import { BROWSER_DATA } from "../../constant/constantData";
 import BrowserCard from "../browserCard/BrowserCard";
-import { BrowserData } from "./browserData";
 
 function Browser() {
   return (
@@ -10,7 +10,7 @@ function Browser() {
             <h1 className="text-[37px] font-[600px] ">Browse Categories</h1>
           </div>
           <div className="flex flex-wrap w-[315px] md:w-[690px] lg:w-[1000px] gap-[10px] justify-center items-center">
-            {BrowserData.map((item, index) => {
+            {BROWSER_DATA?.map((item, index) => {
               return (
                 <div key={index}>
                   <BrowserCard item={item} />

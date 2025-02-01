@@ -2,7 +2,7 @@ import Navbar from "../../components/navbar/Navbar";
 import { CiGlobe } from "react-icons/ci";
 import Footer from "../../components/footer/Footer";
 import AuctionTime from "../../components/auction_time/AuctionTime";
-import { nftDetail } from "./nftDetail";
+import { nftDetail } from "./useNft";
 import Loader from "../../components/loader/Loader";
 import { useEffect } from "react";
 import { IMAGES } from "../../constant/images";

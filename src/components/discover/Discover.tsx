@@ -1,7 +1,7 @@
 import { IoEyeOutline } from "react-icons/io5";
 import Button from "../button/Button";
 import DiscoverCard from "../discoverCard/DiscoverCard";
-import { DiscoverData } from "./discoverData";
+import { DISCOVER_DATA } from "../../constant/constantData";
 
 function Discover() {
   return (
@@ -24,7 +24,7 @@ function Discover() {
           </div>
         </div>
         <div className="flex-col md:flex-row lg:flex-row md:w-[690px] lg:w-[1000px] gap-[20px] flex">
-          {DiscoverData.map((item, index) => {
+          {DISCOVER_DATA?.map((item, index) => {
             return (
               <div key={index} className={item.className}>
                 <DiscoverCard item={item} />
