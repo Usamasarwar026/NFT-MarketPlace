@@ -1,6 +1,4 @@
-import Navbar from "../../components/navbar/Navbar";
 import { CiGlobe } from "react-icons/ci";
-import Footer from "../../components/footer/Footer";
 import AuctionTime from "../../components/auction_time/AuctionTime";
 import { nftDetail } from "./useNft";
 import Loader from "../../components/loader/Loader";
@@ -15,7 +13,6 @@ function Nft() {
 
   return (
     <div>
-      <Navbar />
       {loading && <Loader />}
       {error && (
         <div className="flex justify-center items-center h-screen">
@@ -121,7 +118,6 @@ function Nft() {
               </div>
             </div>
           </div>
-          <Footer />
         </>
       )}
       ;
