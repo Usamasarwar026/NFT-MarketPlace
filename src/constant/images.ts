@@ -1,8 +1,8 @@
 import svgicon from "../assets/icon/Nft.png";
 import art from "../assets/image/Art.png";
-import collectible from "../assets/image/collectibles.png";
+import collectible from "../assets/image/Collectibles.png";
 import music from "../assets/image/Music.png";
-import photography from "../assets/image/Photography.png";
+import photography from "../assets/image/PhotoGraphy.png";
 import utitilty from "../assets/image/Utility.png";
 import sport from "../assets/image/Sport.png";
 import video from "../assets/image/Video.png";
@@ -26,15 +26,15 @@ import fox from "../assets/image/FoxAvator.png";
 import shroomie from "../assets/image/ShroomieAvator.png";
 import bekind from "../assets/image/BeKindAvator.png";
 import heroimage2 from "../assets/image/HeroImage.png";
-import heroicon from "../assets/image/heroicon.png";
-import heroimage from "../assets/image/Heroimg.png";
+import heroicon from "../assets/image/HeroIcon.png";
+import heroimage from "../assets/image/HeroImg.png";
 import workicon1 from "../assets/icon/WorkIcon1.png";
 import workicon2 from "../assets/icon/WorkIcon2.png";
 import workicon3 from "../assets/icon/WorkIcon3.png";
 import joinworkimage from "../assets/image/JoinWorkPic.png";
 import logo from "../assets/icon/Logo.png";
-import menuicon from "../assets/icon/navmenu.png";
-import mushroom from "../assets/image/mushroom.png";
+import menuicon from "../assets/icon/NavMenu.png";
+import mushroom from "../assets/image/Mushroom.png";
 import accountpic from "../assets/image/AccountImage.png";
 
 export const IMAGES = {
