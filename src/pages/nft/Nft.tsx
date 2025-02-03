@@ -1,12 +1,12 @@
 import { CiGlobe } from "react-icons/ci";
-import AuctionTime from "../../components/auction_time/AuctionTime";
-import { nftDetail } from "./useNft";
+import AuctionTime from "../../components/auctionTime/AuctionTime";
+import { useNft } from "./useNft";
 import Loader from "../../components/loader/Loader";
 import { useEffect } from "react";
 import { IMAGES } from "../../constant/images";
 
 function Nft() {
-  const { nftdetail, loading, error } = nftDetail();
+  const { nftdetail, loading, error } = useNft();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import collectionReducer from "./../store/slices/collectionSlice";
+import collectionReducer from "./slices/collectionSlice";
 import collectionSlugReducer from "./slices/collectionSlugSlice";
 
 import nftSliceReducer from "./slices/nftSlice";

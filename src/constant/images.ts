@@ -1,4 +1,4 @@
-import svgicon from "../assets/icon/nft.png";
+import svgicon from "../assets/icon/Nft.png";
 import art from "../assets/image/Art.png";
 import collectible from "../assets/image/collectibles.png";
 import music from "../assets/image/Music.png";
@@ -35,10 +35,10 @@ import joinworkimage from "../assets/image/JoinWorkPic.png";
 import logo from "../assets/icon/Logo.png";
 import menuicon from "../assets/icon/navmenu.png";
 import mushroom from "../assets/image/mushroom.png";
-import AccountPic from "../assets/image/AccountImage.png";
+import accountpic from "../assets/image/AccountImage.png";
 
 export const IMAGES = {
-  SVGICON: svgicon,
+  SVG_ICON: svgicon,
   ART: art,
   COLLECTIBLE: collectible,
   MUSIC: music,
@@ -75,5 +75,5 @@ export const IMAGES = {
   LOGO: logo,
   MENUICON: menuicon,
   MUSHROOM: mushroom,
-  ACCOUNTPIC: AccountPic,
+  ACCOUNTPIC: accountpic,
 };

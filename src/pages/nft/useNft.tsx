@@ -4,7 +4,7 @@ import { fetchNFT } from "../../store/slices/nftSlice";
 import { useEffect } from "react";
 import { NFTParams } from "../../types/types";
 
-export function nftDetail() {
+export function useNft() {
   const { marketplace, contract, identifier } = useParams<NFTParams>();
   const dispatch = useAppDispatch();
   const { nftdetail, loading, error } = useAppSelector((state) => state.nft);

@@ -37,12 +37,13 @@ const router = createBrowserRouter([
         path: "/ranking",
         element: <Ranking />,
       },
-      {
-        path: "/connectwallet",
-        element: <ConnectWalletPage />,
-      },
+      
      
     ]
+  },
+  {
+    path: "/connectwallet",
+    element: <ConnectWalletPage />,
   },
   {
     path: "/signup",
