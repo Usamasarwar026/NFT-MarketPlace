@@ -19,7 +19,7 @@ function AccountSection() {
               Create account
             </div>
             <div className="font-[400px] text-[16px] lg:text-[22px] text-white">
-              Welcome! enter your details and start creating, collecting and
+              Welcome! Enter your details and start creating, collecting and
               selling NFTs.
             </div>
           </div>
