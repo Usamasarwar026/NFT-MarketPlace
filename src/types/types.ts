@@ -60,7 +60,6 @@ export type NFTDetail = {
   updated_at: string;
 };
 
-// collection Slug types
 export type NftType = {
   identifier: string;
   collection: string;

@@ -10,7 +10,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { IMAGES } from "../../constant/images";
 
 const navigation = [
-  { name: "Marketplace", href: "marketplace", current: true },
+  { name: "Marketplace", href: "marketplace", current: false },
   { name: "Ranking", href: "ranking", current: false },
   { name: "Connect a Wallet", href: "connectwallet", current: false },
 ];
