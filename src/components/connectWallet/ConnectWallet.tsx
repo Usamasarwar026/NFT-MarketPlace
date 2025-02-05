@@ -1,7 +1,5 @@
 import Button from "../button/Button";
-import mask from "../../assets/icon/Metamask.png";
-import wallet from "../../assets/icon/WalletConnect.png";
-import coin from "../../assets/icon/Coinbase.png";
+
 import { IMAGES } from "../../constant/images";
 function ConnectWallet() {
   return (
@@ -28,7 +26,7 @@ function ConnectWallet() {
           <div className="flex flex-col gap-5">
             <div className="relative w-[320px]">
               <img
-                src={mask}
+                src={IMAGES.META_MASK}
                 alt=""
                 className="absolute top-1/2 left-10 transform -translate-y-1/2"
               />
@@ -39,7 +37,7 @@ function ConnectWallet() {
             </div>
             <div className="relative w-[320px]">
               <img
-                src={wallet}
+                src={IMAGES.WALLET_CONNECT}
                 alt=""
                 className="absolute top-1/2 left-10 transform -translate-y-1/2"
               />
@@ -50,7 +48,7 @@ function ConnectWallet() {
             </div>
             <div className="relative w-[320px]">
               <img
-                src={coin}
+                src={IMAGES.COINBASE}
                 alt=""
                 className="absolute top-1/2 left-10 transform -translate-y-1/2"
               />

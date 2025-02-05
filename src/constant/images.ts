@@ -36,6 +36,9 @@ import logo from "../assets/icon/Logo.png";
 import menuicon from "../assets/icon/NavMenu.png";
 import mushroom from "../assets/image/Mushroom.png";
 import accountpic from "../assets/image/AccountImage.png";
+import mask from "../assets/icon/MetaMask.png";
+import wallet from "../assets/icon/WalletConnect.png";
+import coin from "../assets/icon/CoinBase.png";
 
 export const IMAGES = {
   SVG_ICON: svgicon,
@@ -76,4 +79,7 @@ export const IMAGES = {
   MENUICON: menuicon,
   MUSHROOM: mushroom,
   ACCOUNTPIC: accountpic,
+  META_MASK: mask,
+  WALLET_CONNECT: wallet,
+  COINBASE: coin, 
 };
